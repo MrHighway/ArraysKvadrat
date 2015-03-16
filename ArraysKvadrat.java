@@ -695,7 +695,7 @@ public class ArraysKvadrat {
 	 * @since 7
 	 */
 	public static boolean vrsticaPolna(int[][] a, int indV){
-		if(indV < a.length){
+		if(indV > a.length){
 			return false;
 		}
 		for (int i = 0; i < a[indV].length; i++) {
