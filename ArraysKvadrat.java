@@ -684,6 +684,29 @@ public class ArraysKvadrat {
 
 		return b;			
 	}
+	
+	/**
+	 * Metoda preveri, ali so vsi elementi v neki vrstici 
+	 * različni od nič rezultat preverjanja vrne v obliki boolenana.
+	 * Če vrstice, ki jo preverjamo v tabeli ni, metoda vrne false
+	 * @param a tabela, v kateri preverjamo vrstico
+	 * @param indV index vrstice, ki jo želimo preveriti
+	 * @return boolean, ki poveli, ali je vrstica res prazna
+	 * @since 7
+	 */
+	public static boolean vrsticaPolna(int[][] a, int indV){
+		if(indV < a.length){
+			return false;
+		}
+		for (int i = 0; i < a[indV].length; i++) {
+			if(a[indV][i] == 0){
+				return false;
+			}
+		}
+		
+		
+		return true;
+	}
 }
 
 
